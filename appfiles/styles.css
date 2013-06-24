@@ -1,0 +1,469 @@
+@font-face {
+    font-family: 'TitilliumTextXBold';
+    src: url('../fonts/TitilliumText25L001-webfont.eot');
+    src: url('../fonts/TitilliumText25L001-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/TitilliumText25L001-webfont.woff') format('woff'),
+         url('../fonts/TitilliumText25L001-webfont.ttf') format('truetype'),
+         url('../fonts/TitilliumText25L001-webfont.svg#TitilliumText25L800wt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'TitilliumTextBold';
+    src: url('../fonts/TitilliumText25L002-webfont.eot');
+    src: url('../fonts/TitilliumText25L002-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/TitilliumText25L002-webfont.woff') format('woff'),
+         url('../fonts/TitilliumText25L002-webfont.ttf') format('truetype'),
+         url('../fonts/TitilliumText25L002-webfont.svg#TitilliumText25L600wt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'TitilliumTextMedium';
+    src: url('../fonts/TitilliumText25L003-webfont.eot');
+    src: url('../fonts/TitilliumText25L003-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/TitilliumText25L003-webfont.woff') format('woff'),
+         url('../fonts/TitilliumText25L003-webfont.ttf') format('truetype'),
+         url('../fonts/TitilliumText25L003-webfont.svg#TitilliumText25L400wt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'TitilliumTextRegular';
+    src: url('../fonts/TitilliumText25L004-webfont.eot');
+    src: url('../fonts/TitilliumText25L004-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/TitilliumText25L004-webfont.woff') format('woff'),
+         url('../fonts/TitilliumText25L004-webfont.ttf') format('truetype'),
+         url('../fonts/TitilliumText25L004-webfont.svg#TitilliumText25L250wt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'TitilliumTextLight';
+    src: url('../fonts/TitilliumText25L005-webfont.eot');
+    src: url('../fonts/TitilliumText25L005-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/TitilliumText25L005-webfont.woff') format('woff'),
+         url('../fonts/TitilliumText25L005-webfont.ttf') format('truetype'),
+         url('../fonts/TitilliumText25L005-webfont.svg#TitilliumText25L1wt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'TitilliumTextThin';
+    src: url('../fonts/TitilliumText25L-webfont.eot');
+    src: url('../fonts/TitilliumText25L-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/TitilliumText25L-webfont.woff') format('woff'),
+         url('../fonts/TitilliumText25L-webfont.ttf') format('truetype'),
+         url('../fonts/TitilliumText25L-webfont.svg#TitilliumText25L999wt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	width: 100%;
+	font-family: 'TitilliumTextRegular', Verdana, sans-serif;
+	font-size: 12pt;
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper {
+    font-family: 'TitilliumTextRegular', Verdana, sans-serif;;
+    padding: 0;
+	display:  block;
+	margin: 0 auto 40px auto;
+	width:  840px;
+	position:  relative;
+	box-shadow: 0px 3px 30px #444;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+h1 {
+    font-size: 28pt;
+	color:  #008197;
+	border-bottom: 1px dotted #000;
+	padding:  0 0 10pt 0;
+	margin-top:  10pt;
+}
+
+h2 {
+	background: -webkit-gradient(linear, left top, left bottom, from(#7fbf49), to(#179f9f));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	line-height:  110%;
+	margin:  0 0 0 44px;
+	padding: 0px 0px 7px 0px;
+}
+
+h3 {
+	color: #008197;
+	font-size:  17pt;
+	line-height:  110%;	
+}
+
+h4.button {
+	color: #fff;
+	font-size:  13pt;
+}
+
+#intro-stats {
+    margin: 0 0 0 430px;
+    padding:  0;
+	width:  330px;
+	
+}
+
+#intro-stats img {
+	width:  300px;
+}
+
+#intro-content {
+	background:  #fff;
+	padding:  5% 5% 1% 5%;
+	margin:  0;
+	display:  block;
+}
+
+#intro-content-copy {
+	width:  420px;
+	float: left;
+	margin:  0;
+}
+
+#intro-content-copy p {
+	margin:  5px 0;
+	
+}
+#intro-content p.intro {
+	font-size:  20pt;
+	margin:  0;
+	line-height:  120%;
+}
+
+#course-area {
+	background:  #fff url(carousel-bg.jpg) top center no-repeat;
+	background-size: 100%;
+	margin:  0;
+	padding:0px 1% 40px 1%;
+	clear:  left;
+	position:relative;
+}
+
+#explore-more{
+	bottom:0px;
+	position: absolute;
+	width:220px;
+	height:83px;
+	left:42px;
+	background:  url(explore_gesturing.png) top center no-repeat;
+	background-size: 100% auto;
+}
+
+#list-heading {
+	display: block;
+	margin:  0;
+	padding:  0;
+}
+
+#list-heading h4.button {
+	float:  left;
+	margin:  9% 11% 5% 11%;
+}
+
+#list-heading p {
+	padding:  7% 2%;
+	margin:  0;
+	line-height:  125%;
+	font-family: 'TitilliumTextRegular', Verdana, sans-serif;
+	font-style:  italic;
+	color:  #fff;
+}
+
+#course-list-pane {
+	position:  relative;
+	margin:  0 0 0;
+	padding:  0;
+	width:  770px;
+	height:  260px;
+	overflow:  hidden;
+	display:  block;
+	top:  -14px;
+	left:  -8px;
+}
+
+#course-list {
+	display: block;
+	margin:  0;
+	height:  220px;
+	width: 7000px;
+	position: absolute;
+	
+}
+
+#course-list ul {
+ 	 float:  left;
+	 display:  block;
+	 width: 700px;
+	 margin:  0px 10px 0px 42px;
+	 padding:  0;
+	 height:  220px;
+}
+
+#course-list ul li {
+	display:  inline-block;
+	box-shadow: 0px 3px 5px #444;
+	background:  #fff;
+	margin:  0 10px 14px 2px;
+	padding:  8px;
+	text-align: center;
+	list-style-type: none;
+	width:  198px;
+	height: 50px;
+	vertical-align: middle;
+	border-radius: 5px;
+}
+
+#course-pages,
+#job-pages  {
+	position:  relative;
+	margin:  0;
+	text-align:  center;
+	padding: 0;	
+	top:  10px;
+}
+
+#course-pages li,
+#job-pages li {
+	text-align:  center;
+	text-shadow: 0px 3px 5px #444;
+	list-style-type: none;
+	display:  inline;
+	margin:  0 7px;
+	color: #fff;
+	font-size:  60px;
+	line-height:  0%;
+	padding:  0;
+}
+
+#job-pages li {
+    font-size: 30px;	
+}
+
+#course-pages li.current,
+#job-pages li.current {
+	color:  #000;
+}
+
+#promo-area {
+	background-size: 100%;
+	margin:  0;
+	padding:  0;
+	height:  189px;
+}
+
+#promo-area #promo-content {
+	position: relative;
+	display: block;
+	width:  272px;
+	left:  86px;
+	top:  55px;
+	color:  #fff;
+	font-style:  italic;
+}
+
+#promo-content h5 {
+	color:  #74c840;
+	font-size:  100%;
+	font-weight: normal;
+	margin: 0;
+	line-height: 0;
+}
+
+#promo-content p {
+	font-size:  12px;
+}
+
+#job-heading {
+	height:245px;
+	position:relative;
+	background:  #fff url(study-bg.png) top center no-repeat;
+	background-size: 100%;
+	padding: 0 0 15px 0;
+	display: block;
+	margin:  0;
+}
+
+
+
+#job-heading h4 {
+	margin:  0px 0px 0 60px;
+	padding: 35px 0 30px 0;
+	display:  block;
+	width:  230px;
+	/*float:  left;*/
+}
+
+
+#job-heading p {
+	margin:  15px 0px 0px 45px;
+	line-height:  125%;
+	font-family: 'TitilliumTextRegular', Verdana, sans-serif;
+	font-style:  italic;
+	color:  #fff;
+	width:230px;
+}
+
+#study-options{
+	position:absolute;
+	left:313px;
+	top:65px;
+	width:391px;
+	height:96px;
+	
+}
+
+
+#study-options a:link,
+#study-options a:visited,
+#study-options a:hover,
+#study-options a:active{
+	text-decoration: none;
+	color:#000;
+	font-size:15px;
+	
+}
+
+
+.study-options-button{
+
+	position:absolute;
+	display: inline-block;
+	width:60px;
+	height:111px;
+	background: url(study_options_for.png) top center no-repeat;
+	background-size: 100%;
+}
+
+#study-options a{
+	position:absolute;
+	
+}
+
+#study-options-text{
+	margin-top:23px;
+	color:#237461;
+	text-shadow: 1px 1px  #fff;
+}
+
+#study-options span{
+	float:left;
+	margin-left:26px;
+	width:270px;
+	text-shadow: 1px 1px  #fff;
+}
+
+#study-options a.study-options-button{
+	display: inline-block;
+	width:391px;
+	height:96px;
+	background: url(study_options_for.png) top center no-repeat;
+	
+	background-size: 100%;
+}
+
+#study-options a.study-options-button:hover,
+#study-options a.study-options-button:active {
+	background: url(study_options_for_pressed.png) top center no-repeat;
+	background-size: 100%;
+}
+
+	
+#job-list ul {
+	display:  block;
+	float:  left;
+	width: 700px;
+	margin:  0px 0px 26px 42px;
+	padding:  0;
+	height:  82px;
+}
+
+#job-list ul li {
+	display:  inline-block;
+	box-shadow: 0px 3px 5px #444;
+	background:  #fff;
+	margin:  0 10px 14px 2px;
+	padding:  8px;
+	text-align: center;
+	list-style-type: none;
+	width:  198px;
+	height: 75px;
+	vertical-align: middle;
+	border-radius: 5px;
+}
+
+#job-list li  small {
+  	color:  #74c840;
+}
+
+#footer {
+	text-align:  center;
+	margin:  ;
+	padding:  0;
+	background:  #fff;
+	display:  block;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	font-weight:  bold;
+	font-size:  10pt;
+	position: relative; 
+    top: -55px;
+}
+
+#footer a.green-button {
+	display: inline-block;
+	width: 431px;
+	height: 80px;
+	color: #fff;
+	background:  #fff url(keep-exploring.png) center 0 no-repeat;
+    background-size: 100%;
+}
+
+
+#footer a.green-button:hover,
+#footer a.green-button:active {
+	background:  #fff url(keep-exploring-pressed.png) center 0 no-repeat;
+	background-size: 100%;
+	width: 431px;
+	height: 80px;
+}
+
+#footer a.green-button img {
+	display: none;
+}
+
+/* Panels */
+.helper-panel { background: url(helper-panel.jpg) top left no-repeat; }
+.doer-panel { background: url(doer-panel.jpg) top left no-repeat; }
+.creator-panel { background: url(creator-panel.jpg) top left no-repeat; }
+.thinker-panel { background: url(thinker-panel.jpg) top left no-repeat; }
+.organizer-panel { background: url(organiser-panel.jpg) top left no-repeat; }
+.persuader-panel { background: url(persuader-panel.jpg) top left no-repeat; }
+
+
+
+
+
+
+

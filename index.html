@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
+        <title>Unitec | YouFinder</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        
+        <meta name="HandheldFriendly" content="true" /> 
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png" />
+		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/professionsstyles.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <img class="bg-image" src="images/main_bg.jpg" alt="bg image" />
+        
+        <header>
+        	<div class="headerwrapper">
+                <a href="#"><div class="headerbtn viewcharactersbtn">View all characters <span class="plus_btnicon"></span> </div></a>
+                <a href="#"><div class="headerbtn backbtn">Back</div></a>
+                <a href="#"><div class="headerbtn backfromhelpbtn">Back</div></a>
+                <a href="#"><div class="headerbtn finishedbtn">I've Finished Exploring</div></a>
+                <a href="#"><div class="headerbtn needhelpbtn">Need Help?</div></a>
+                <input class="headerbtn quitbtn" type="button" value="Quit" onClick="window.location.reload()">
+            </div>
+        </header>
+    
+        <div id="sliderheader">
+        	<div class="headerwrapper">
+                <a href="#"><div class="headerbtn sliderbackbtn closeslider">Back</div></a>
+                <a href="#"><div class="headerbtn needhelpbtn">Need help?</div></a>
+                <input class="headerbtn quitbtn" type="button" value="Quit" onClick="window.location.reload()">
+            </div>
+        </div>
+        
+        <div id="helpheader">
+        	<div class="headerwrapper">
+                <a href="#"><div class="headerbtn backfromhelpbtn">Back</div></a>
+            </div>
+        </div>
+        
+  
+  <!-- MAIN CONTETN PAGE -->
+    
+  <form id="siteform" class="clearfix"> 
+    <div class="frame wrapbottomguys" id="welcomepage">    
+        
+        <div class="browseralert">
+        	<div>Your browser is out of date. It may not display all features of this and other websites. <br/><a href="http://browser-update.org/update.html" target="_blank" style="color:#C00;">Learn how to update your browser</a></div>
+        </div>
+        
+        <section class="topwrapper clearfix">
+            <h1>Welcome to YouFinder</h1>
+            <h3>Get a view into what your future could be and what careers might suit you. First, we'll introduce you to our characters to help narrow down the options that best suit you. From Doer to Organiser, we offer something for everyone.</h3>
+              
+             <div id="welcome_form">          
+                <span>Let's start with your first name...</span>
+                <input id="fName" name="fName" title="fName" type="text" placeholder="What's your name?" value="" autocomplete="off"/>
+                <input id="startbtn" class="formbtn" name="startbtn" type="button" value="Let's go">
+            </div>
+             
+            <span class="divider"></span>
+            
+            <div class="welcome_youfinder_logo"></div>
+            <div class="uniteclogo"><a href="http://www.unitec.ac.nz/" target="_blank"></a></div>
+        </section>
+        
+        <section class="welcome_characters">
+            <img src="images/characters/doer.png" alt="doer" />
+            <img class="bringforward" src="images/characters/creator.png" alt="creator" />
+            <img src="images/characters/thinker.png" alt="thinker" />
+            <img src="images/characters/helper.png" alt="helper" />
+            <img src="images/characters/persuader.png" alt="persuader" />
+            <img src="images/characters/organizer.png" alt="organizer" />
+        </section>
+    </div>  
+    
+   
+   <!-- CHARACTER CHOICE SECTION --> 
+   
+   <div class="frame choosecharacter">     
+        <section id="foldup" class="topwrapper clearfix">
+        	<h2>Hi&nbsp;<span class="firstnameintext"></span>,</h2>
+            <h3>Explore all the personalities to find the ones that match you.<br/>
+            Most people are a mix - remember that you can select as many as suit you!</h3>
+        </section>
+        
+		<nav class="characternav">
+            <ul>
+                <li><a href=".doersection">
+                	<img class="spotlight" src="images/spotlight.png" alt="spotlight"/>
+                	<img src="images/characters/doer.png" alt="doer" />
+                    <span>Doer</span>
+                    </a>
+                </li>
+                <li ><a href=".creatorsection">
+                    <img class="spotlight" src="images/spotlight.png" alt="spotlight"/>
+                    <img src="images/characters/creator.png" alt="creator" />
+                    <span>Creator</span>
+                    </a>
+                </li>
+                <li><a href=".thinkersection">
+                    <img class="spotlight" src="images/spotlight.png" alt="spotlight"/>
+                    <img src="images/characters/thinker.png" alt="thinker" />
+                    <span>Thinker</span>
+                    </a>
+                </li>
+                <li><a href=".helpersection">
+                    <img class="spotlight" src="images/spotlight.png" alt="spotlight"/>
+                    <img src="images/characters/helper.png" alt="helper" />
+                    <span>Helper</span>
+                    </a>
+                </li>
+                <li><a href=".persuadersection">
+                    <img class="spotlight" src="images/spotlight.png" alt="spotlight"/>
+                    <img src="images/characters/persuader.png" alt="persuader" />
+                    <span>Persuader</span>
+                    </a>
+                </li>
+                <li><a href=".organizersection">
+                    <img class="spotlight" src="images/spotlight.png" alt="spotlight"/>
+                    <img src="images/characters/organizer.png" alt="organizer" />
+                    <span>Organiser</span>
+                    </a>
+                </li>
+            </ul>
+            <img class="horisontalpointer" src="images/horisontal_pointer.png" alt="-" />
+        </nav>
+        
+        <section class="characterintro doersection clearfix">
+            <div class="greeting">
+                <h2>Hi&nbsp;<span class="firstnameintext"></span>, I am a Doer</h2>
+                <h3>I like working with machines, tools or animals, and I prefer being outdoors.</h3>
+            </div>
+            <div class="scrolldownbtnarea clearfix">
+                <div class="scrolldownbtn">What is a 'Doer' like</div>
+            </div>
+        </section>
+        <section class="characterintro creatorsection clearfix">
+            <div class="greeting">
+                <h2>Hi&nbsp;<span class="firstnameintext"></span>, I am a Creator</h2>
+                <h3>I'm creative and I use this to stand out from the crowd.</h3>
+            </div>
+            <div class="scrolldownbtnarea clearfix">
+                <div class="scrolldownbtn">What is a 'Creator' like</div>
+            </div>
+        </section>
+        <section class="characterintro thinkersection clearfix">
+            <div class="greeting">
+                <h2>Hi&nbsp;<span class="firstnameintext"></span>, I am a Thinker</h2>
+                <h3>I use science and maths to help me investigate and analyze problems.</h3>
+            </div>
+            <div class="scrolldownbtnarea clearfix">
+                <div class="scrolldownbtn">What is a 'Thinker' like</div>
+            </div>
+        </section>
+        <section class="characterintro helpersection clearfix">
+            <div class="greeting">
+                <h2>Hi&nbsp;<span class="firstnameintext"></span>, I am a Helper</h2>
+                <h3>I'm a social person and I find it easy to get on with other people.</h3>
+            </div>
+            <div class="scrolldownbtnarea clearfix">
+                <div class="scrolldownbtn">What is a 'Helper' like</div>
+            </div>
+        </section>
+        <section class="characterintro persuadersection clearfix">
+            <div class="greeting">
+                <h2>Hi&nbsp;<span class="firstnameintext"></span>, I am a Persuader</h2>
+                <h3>I like taking charge or a group of people or a project.</h3>
+            </div>
+            <div class="scrolldownbtnarea clearfix">
+                <div class="scrolldownbtn">What is a 'Persuader' like</div>
+            </div>
+        </section>
+        <section class="characterintro organizersection clearfix">
+            <div class="greeting">
+                <h2>Hi&nbsp;<span class="firstnameintext"></span>, I am a Organiser</h2>
+                <h3>I'm good at planning and organizing, especially as part of a team.</h3>
+            </div>
+            <div class="scrolldownbtnarea clearfix">
+                <div class="scrolldownbtn">What is an 'Organiser' like</div>
+            </div>
+        </section>
+        
+   </div>
+   
+   
+   <!-- DOER -->
+   <div class="characterframe frame doersection clearfix"> 
+   	  <div class="talkingguyandslider">
+        <section class="characterdescription clearfix">
+            <div class="talkingguy">
+            	<div class="wrapspeachbubble clearfix">
+                    <ul class="clearfix">
+                        <li>Real life work experience is part of Unitec's programmes</li>
+                    	<li>Working in trades and technology can earn you good money</li>
+                    </ul>
+                    <span class="speechbubbledot"></span>
+                </div>
+                <img src="images/characters/doer.png" alt="creator" />
+            </div>
+            
+            <div class="slidercontainer">
+              <div class="slidercontainer_wrapper clearfix">
+                <div class="description clearfix">
+                	<div class="descriptiontext">
+                        <h2>I am your typical Doer</h2>
+                        <p>I like working with machines, tools or animals, and I prefer being outdoors.</p>
+                        <p>I'm quite good at making things and I like to know how stuff works. I try to fix or find practical solutions to problems.</p>
+                        <p>I like working with my hands and repairing or building things that can be used in the real world.</p>
+                    </div>
+                    
+                     <div class="soundslikeyou">
+                        <span>Sounds bit like you?</span>
+                        <input type="text" id="s1" class="amount" name="persona1rating" value="50" readonly/>
+                        <div class="sliderbg">
+                            <div class="slider-range-min-s1"></div>
+                            <div class="notlikeme"></div>
+                            <div class="onthemoney"></div>
+                        </div>
+                    </div>
+                    
+                	<div class="careeroptions clearfix">
+                        <div class="careeroptionsbtn"><span class="careeroptionsbtnicon"></span>View Career Options</div>
+                    </div>
+                </div>
+                
+                <div class="options clearfix">
+                	<h2>Here are some career options</h2>
+                    <p>Find the career path that sounds most exciting to you!</p>
+                    <nav class="clearfix">
+                        <ul class="optionscontainer doercareer">
+                            <li><a href="appfiles/building-technology.html">Building Technology</a></li>
+                            <li><a href="appfiles/civil-engineering.html">Civil Engineering and Surveying</a></li>
+                            <li><a href="appfiles/construction-management.html">Construction Management</a></li>
+                            <li><a href="appfiles/electrotechnology.html">Electrotechnology</a></li>
+                            <li><a href="appfiles/landscape-architecture.html">Landscape Architecture</a></li>
+                            <li><a href="appfiles/natural-sciences.html">Natural Sciences</a></li>
+                            <li><a href="appfiles/plumbing-and-gasfitting.html">Plumbing and Gasfitting</a></li>
+                            <li><a href="appfiles/transport-technology.html">Transport Technology and Fabrication</a></li>
+                        </ul>
+                        <div class="relatedareas">
+                            <p><em>Related Areas</em></p>
+                            <ul class="doercareer">
+                                <li><a href="appfiles/design-and-visual-arts.html">Design and Visual Arts</a></li>
+                                <li><a href="appfiles/sport.html">Sport</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                
+              </div>  
+            </div>
+            <span class="verticalpointer"></span>
+        </section>
+     </div>
+    </div>
+   
+   <!-- CREATOR -->
+   <div class="characterframe frame creatorsection clearfix"> 
+     <div class="talkingguyandslider">
+        <section class="characterdescription clearfix">
+            <div class="talkingguy">
+            	<div class="wrapspeachbubble clearfix">
+                    <ul class="clearfix">
+                        <li>Our students go on to be talented performers, artists and designers</li>
+                    	<li>Study with people from different age groups, backgrounds and cultures</li>
+                    </ul>
+                    <span class="speechbubbledot"></span>
+                </div>
+                <img src="images/characters/creator.png" alt="creator" />
+            </div>
+            
+            <div class="slidercontainer">
+              <div class="slidercontainer_wrapper clearfix">
+                <div class="description clearfix">
+                	<div class="descriptiontext">
+                        <h2>I am your typical Creator</h2>
+                        <p>I am creative and I use this to stand out from the crowd. I show my artistic side through music, fashion, acting, dancing or art.</p>
+                        <p>I like talking about my feelings, but I sometimes find it hard to take critisism.</p>
+                        <p>I am quite spontaneous and I prefer not to have too many rules.</p>
+                    </div>
+                    
+                     <div class="soundslikeyou">
+                    	<span>Sounds bit like you?</span>
+                        <input type="text" id="s2" class="amount" name="persona2rating" value="" readonly/>
+                        <div class="sliderbg">
+                            <div class="slider-range-min-s2"></div>
+                        	<div class="notlikeme"></div>
+                        	<div class="onthemoney"></div>
+                        </div>
+                    </div>
+                	<div class="careeroptions clearfix">
+                        <div class="careeroptionsbtn"><span class="careeroptionsbtnicon"></span>View Career Options</div>
+                    </div>
+                </div>
+                
+                <div class="options clearfix">
+                	<h2>Here are some career options</h2>
+                    <p>Find the career path that sounds most exciting to you!</p>
+                    <nav class="clearfix">
+                        <ul class="optionscontainer creatorcareer">
+                            <li><a href="appfiles/architecture.html">Architecture</a></li>
+                            <li><a href="appfiles/communication-studies.html">Communication Studies</a></li>
+                            <li><a href="appfiles/design-and-visual-arts.html">Design and Visual Arts</a></li>
+                            <li><a href="appfiles/landscape-architecture.html">Landscape Architecture</a></li>
+                            <li><a href="appfiles/performing-and-screen-arts.html">Performing and Screen Arts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+              </div>  
+            </div>
+            <span class="verticalpointer"></span>
+        </section>
+      </div>
+    </div>
+    
+   <!-- THINKER -->
+   <div class="characterframe frame thinkersection clearfix"> 
+     <div class="talkingguyandslider">
+        <section class="characterdescription clearfix">
+            <div class="talkingguy">
+                  <div class="wrapspeachbubble clearfix">
+                    <ul class="clearfix">
+                        <li>Our students win awards and competitions</li>
+                        <li>Guest lecturers keep you up to date with industry developments</li>
+                    </ul>
+                    <span class="speechbubbledot"></span>
+                  </div>
+                <img src="images/characters/thinker.png" alt="creator" />
+            </div>
+            
+            <div class="slidercontainer">
+              <div class="slidercontainer_wrapper clearfix">
+                <div class="description clearfix">
+                	<div class="descriptiontext">
+                        <h2>I am your typical Thinker</h2>
+                        <p>I use science and maths to help me investigate and analyse problems.</p>
+                        <p>I am a logical person and I work through things step by step. I work well on my own and sometimes I forget that other people are there.</p>
+                        <p>I'm brainy but I'm not very confident in social situations.</p>
+                    </div>
+                    
+                     <div class="soundslikeyou">
+                    	<span>Sounds bit like you?</span>
+                        <input type="text" id="s3" class="amount" name="persona3rating" value="" readonly/>
+                        <div class="sliderbg">
+                            <div class="slider-range-min-s3"></div>
+                        	<div class="notlikeme"></div>
+                        	<div class="onthemoney"></div>
+                        </div>
+                    </div>
+                	<div class="careeroptions clearfix">
+                        <div class="careeroptionsbtn"><span class="careeroptionsbtnicon"></span>View Career Options</div>
+                    </div>
+                </div>
+                
+                <div class="options clearfix">
+                	<h2>Here are some career options</h2>
+                    <p>Find the career path that sounds most exciting to you!</p>
+                    <nav class="clearfix">
+                        <ul class="optionscontainer thinkercareer">
+                            <li><a href="appfiles/civil-engineering.html">Civil Engineering and Surveying</a></li>
+                            <li><a href="appfiles/computing-and-information-technology.html">Computing and IT</a></li>
+                            <li><a href="appfiles/medical-imaging.html">Medical Imaging</a></li>
+                            <li><a href="appfiles/natural-sciences.html">Natural Sciences</a></li>
+                            <li><a href="appfiles/nursing.html">Nursing</a></li>
+                            <li><a href="appfiles/osteopathy.html">Osteopathy</a></li>
+                        </ul>
+                        <div class="relatedareas">
+                            <p><em>Related Areas</em></p>
+                            <ul class="thinkercareer">
+                                <li><a href="appfiles/accounting-and-finance.html">Accounting and Finance</a></li>
+                                <li><a href="appfiles/architecture.html">Architecture</a></li>
+                                <li><a href="appfiles/construction-management.html">Construction Management</a></li>
+                                <li><a href="appfiles/landscape-architecture.html">Landscape Architecture</a></li>
+                                <li><a href="appfiles/sport.html">Sport</a></li>
+                                <li><a href="appfiles/performing-and-screen-arts.html">transport-technology.html</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+              </div>  
+            </div>
+            <span class="verticalpointer"></span>
+        </section>
+      </div>
+    </div>
+        
+   <!-- HELPER -->
+   <div class="characterframe frame helpersection clearfix"> 
+     <div class="talkingguyandslider">
+        <section class="characterdescription clearfix">
+            <div class="talkingguy">
+                  <div class="wrapspeachbubble clearfix">
+                    <ul class="clearfix">
+                        <li>Our students win awards and competitions</li>
+                        <li>Guest lecturers keep you up to date with industry developments</li>
+                    </ul>
+                    <span class="speechbubbledot"></span>
+                  </div>
+                <img src="images/characters/helper.png" alt="creator" />
+            </div>
+            
+            <div class="slidercontainer">
+              <div class="slidercontainer_wrapper clearfix">
+                <div class="description clearfix">
+                	<div class="descriptiontext">
+                        <h2>I am your typical Helper</h2>
+                        <p>I'm a social person and I find it easy to get on with other people. I much prefer working with people than with machines or data.</p>
+                        <p>I'm good at understanding other people's feelings and I find it easy to talk about my own feelings.</p>
+                        <p>I like to give help and advice to my friends when I can.</p>
+                    </div>
+                    
+                     <div class="soundslikeyou">
+                    	<span>Sounds bit like you?</span>
+                        <input type="text" id="s4" class="amount" name="persona4rating" value="" readonly/>
+                        <div class="sliderbg">
+                            <div class="slider-range-min-s4"></div>
+                        	<div class="notlikeme"></div>
+                        	<div class="onthemoney"></div>
+                        </div>
+                    </div>
+                	<div class="careeroptions clearfix">
+                        <div class="careeroptionsbtn"><span class="careeroptionsbtnicon"></span>View Career Options</div>
+                    </div>
+                </div>
+                
+                <div class="options clearfix">
+                	<h2>Here are some career options</h2>
+                    <p>Find the career path that sounds most exciting to you!</p>
+                    <nav class="clearfix">
+                        <ul class="optionscontainer helpercareer">
+                            <li><a href="appfiles/community-and-health-services.html">Community and Health Services</a></li>
+                            <li><a href="appfiles/education.html">Education</a></li>
+                            <li><a href="appfiles/language-studies.html">Language Studies</a></li>
+                            <li><a href="appfiles/medical-imaging.html">Medical Imaging</a></li>
+                            <li><a href="appfiles/nursing.html">Nursing</a></li>
+                            <li><a href="appfiles/osteopathy.html">Osteopathy</a></li>
+                            <li><a href="appfiles/social-practice.html">Social Practice</a></li>
+                            <li><a href="appfiles/sport.html">Sport</a></li>
+                        </ul>
+                        <div class="relatedareas">
+                            <p><em>Related Areas</em></p>
+                            <ul class="helpercareer">
+                                <li><a href="appfiles/accounting-and-finance.html">Design and Visual Arts</a></li>
+                                <li><a href="appfiles/performing-and-screen-arts.html">Performing and Screen Arts</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+              </div>  
+            </div>
+            <span class="verticalpointer"></span>
+        </section>
+      </div>
+    </div>
+    
+   <!-- PERSUADER -->
+   <div class="characterframe frame persuadersection clearfix"> 
+     <div class="talkingguyandslider">
+        <section class="characterdescription clearfix">
+            <div class="talkingguy">
+                  <div class="wrapspeachbubble clearfix">
+                    <ul class="clearfix">
+                        <li>Study overseas as part of your course</li>
+                        <li>Meet business leaders at industry events during your studies</li>
+                    </ul>
+                    <span class="speechbubbledot"></span>
+                  </div>
+                <img src="images/characters/persuader.png" alt="creator" />
+            </div>
+            
+            <div class="slidercontainer">
+              <div class="slidercontainer_wrapper clearfix">
+                <div class="description clearfix">
+                	<div class="descriptiontext">
+                        <h2>I am your typical Persuader</h2>
+                        <p>I like taking charge of a group of people or a project. I'm a good team leader because I'm very enthusiastic and I can persuade others.</p>
+                        <p>I'm good at public speaking too. I think about the future and how I can be successful in the things that I do.</p>
+                        <p>I have lots of energy and I like exploring new places.</p>
+                    </div>
+                    
+                     <div class="soundslikeyou">
+                    	<span>Sounds bit like you?</span>
+                        <input type="text" id="s5" class="amount" name="persona5rating" value="" readonly/>
+                        <div class="sliderbg">
+                            <div class="slider-range-min-s5"></div>
+                        	<div class="notlikeme"></div>
+                        	<div class="onthemoney"></div>
+                        </div>
+                    </div>
+                	<div class="careeroptions clearfix">
+                        <div class="careeroptionsbtn"><span class="careeroptionsbtnicon"></span>View Career Options</div>
+                    </div>
+                </div>
+                
+                <div class="options clearfix">
+                	<h2>Here are some career options</h2>
+                    <p>Find the career path that sounds most exciting to you!</p>
+                    <nav class="clearfix">
+                        <ul class="optionscontainer persuadercareer">
+                            <li><a href="appfiles/accounting-and-finance.html">Accounting and Finance</a></li>
+                            <li><a href="appfiles/building-technology.html">Building Technology</a></li>
+                            <li><a href="appfiles/construction-management.html">Construction Management</a></li>
+                            <li><a href="appfiles/management-and-marketing.html">Management and Marketing</a></li>
+                        </ul>
+                        <div class="relatedareas">
+                            <p><em>Related Areas</em></p>
+                            <ul class="persuadercareer">
+                                <li><a href="appfiles/communication-studies.html">Communication Studies</a></li>
+                                <li><a href="appfiles/community-and-health-services.html">Community and Health Services</a></li>
+                                <li><a href="appfiles/design-and-visual-arts.html">Design and Visual Arts</a></li>
+                                <li><a href="appfiles/education.html">Education</a></li>
+                                <li><a href="appfiles/performing-and-screen-arts.html">Performing and Screen Arts</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+              </div>  
+            </div>
+            <span class="verticalpointer"></span>
+        </section>
+      </div>
+    </div>
+	
+   <!-- ORGANIZER -->
+   <div class="characterframe frame organizersection clearfix"> 
+     <div class="talkingguyandslider">
+        <section class="characterdescription clearfix">
+            <div class="talkingguy">
+                  <div class="wrapspeachbubble clearfix">
+                    <ul class="clearfix">
+                        <li>At Unitec you'll take part in Industry Based Learning</li>
+                        <li>Unitec qualifications are recognised by the industries you want to work in</li>
+                    </ul>
+                    <span class="speechbubbledot"></span>
+                  </div>
+                <img src="images/characters/organizer.png" alt="creator" />
+            </div>
+            
+            <div class="slidercontainer">
+              <div class="slidercontainer_wrapper clearfix">
+                <div class="description clearfix">
+                	<div class="descriptiontext">
+                        <h2>I am your typical Organiser</h2>
+                        <p>I'm good at planning ad organising, especially as part of a team. I like to know what is expected of me, and I prefer to stick to a routine.</p>
+                        <p>I'm a precise person and I try to make sure my work is neat and accurate.</p>
+                    </div>
+                    
+                        
+                    <div class="soundslikeyou">
+                    	<span>Sounds bit like you?</span>
+                        <input type="text" id="s6" class="amount" name="persona6rating" value="" />
+                        <div class="sliderbg">
+                            <div class="slider-range-min-s6"></div>
+                        	<div class="notlikeme"></div>
+                        	<div class="onthemoney"></div>
+                        </div>
+                    </div>
+                	<div class="careeroptions clearfix">
+                        <div class="careeroptionsbtn"><span class="careeroptionsbtnicon"></span>View Career Options</div>
+                    </div>
+                </div>
+                
+                <div class="options clearfix">
+                	<h2>Here are some career options</h2>
+                    <p>Find the career path that sounds most exciting to you!</p>
+                    <nav class="clearfix">
+                        <ul class="optionscontainer organizercareer">
+                            <li><a href="appfiles/accounting-and-finance.html">Accounting and Finance</a></li>
+                            <li><a href="appfiles/building-technology.html">Building Technology</a></li>
+                            <li><a href="appfiles/construction-management.html">Construction Management</a></li>
+                            <li><a href="appfiles/management-and-marketing.html">Management and Marketing</a></li>
+                        </ul>
+                        <div class="relatedareas">
+                            <p><em>Related Areas</em></p>
+                            <ul class="organizercareer">
+                                <li><a href="appfiles/communication-studies.html">Communication Studies</a></li>
+                                <li><a href="appfiles/community-and-health-services.html">Community and Health Services</a></li>
+                                <li><a href="appfiles/design-and-visual-arts.html">Design and Visual Arts</a></li>
+                                <li><a href="appfiles/education.html">Education</a></li>
+                                <li><a href="appfiles/performing-and-screen-arts.html">Performing and Screen Arts</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+              </div>  
+            </div>
+            <span class="verticalpointer"></span>
+        </section>
+      </div>
+    </div>
+
+
+	<section class="frame professionscontainer">
+    	<img class="ajaxloader" src="images/ajax-loader.gif" alt="loading..." />
+        <div class="loadprofession clearfix"> </div>
+    </section>
+    
+    <!-- SLIDER -->
+    
+    <div class="sliderwrapper">
+          <div class="slider">
+            
+            <div id="shelvespage" class="slideritem activeslide">
+                <section class="shelvescontainer clearfix">
+                    <img class="shelf" src="images/shelf.png" alt="-" />
+                
+                    <input type="checkbox" id="persona1" name="persona1" value="0" autocomplete="off" />
+                    	<label for="persona1" id="persona1_label">
+                            Doer
+                        </label>
+                    
+                    <input type="checkbox" id="persona2" name="persona2" value="0" autocomplete="off" />
+                    	<label for="persona2" id="persona2_label">
+                    		<!--<img class="labelimage" src="images/characters/creator.png" alt="creator" />-->
+                            Creator
+                        </label>
+                        
+                    <input type="checkbox" id="persona3" name="persona3" value="0" autocomplete="off" />
+                    	<label for="persona3" id="persona3_label">
+                            Thinker
+                        </label>
+                </section>
+                    
+                <section class="shelvescontainer clearfix" id="secondshelf"> 
+                <img class="shelf" src="images/shelf.png" alt="-" />   
+                    
+                    <input type="checkbox" id="persona4" name="persona4" value="0" autocomplete="off" />
+                    	<label for="persona4" id="persona4_label">
+                            Helper
+                        </label>
+                    
+                    <input type="checkbox" id="persona5" name="persona5" value="0" autocomplete="off" />
+                    	<label for="persona5" id="persona5_label">
+                            Persuader
+                        </label>
+                        
+                    <input type="checkbox" id="persona6" name="persona6" value="0" autocomplete="off" />
+                    	<label for="persona6" id="persona6_label">
+                            Organiser
+                        </label>
+                </section>
+                
+                <section class="thankstherating clearfix">
+                    <div class="thankstheratingcopy">
+                        <h2>Thanks&nbsp;<span class="firstnameintext"></span>,</h2>
+                        <h3>From your rating you are most like the characters above. If you aren't sure you can pick new ones or keep exploring.</h3>
+                    </div>
+                    <div class="sendmemypicbtnarea clearfix">
+                        <div class="sendmemypicbtn">Send me my pics</div>
+                    </div>
+                </section>
+            </div>
+            
+            <div id="formpage" class="slideritem">
+                <section class="topwrapper clearfix">
+                    <h1>We need a few more details from you</h1>
+                    <div id="details_form" class="clearfix">
+                        <div class="wrapform clearfix">
+                            <label for="fNameFilled">First Name:</label>
+                            <input id="fNameFilled" name="fNameFilled" type="text" value="" autocomplete="off"  tabindex="1">
+                            <!--<input type="text" id="firstname" rel="tipsy" title="Enter your first name"  name="firstname" />-->
+                            
+                            <label for="lName">Last Name:</label>
+                            <input id="lName" name="lName" type="text" value="" autocomplete="off" tabindex="2">
+                        </div>
+                        <div class="wrapform clearfix">
+                            <label for="email">Email Address</label>
+                            <input id="email" name="email" type="text" value="" autocomplete="off" tabindex="3">
+                            
+                            <input id="date" name="date" type="date" value="" class="hidden" autocomplete="off">
+                            
+                            <label for="userRegion">What are you currently doing?</label>
+                            <div class="selectwrapper">
+                                <select id="userRegion" name="userRegion" autocomplete="off" tabindex="4">
+                                    <option label="Choose" disabled selected="selected">Choose...</option>
+                                    <option label="Secondary School" disabled style="color:#000000;">At Secondary School...</option>
+                                    <option label="Auckland - Central" value="Auckland - Central">&ndash;&nbsp;&nbsp;Auckland - Central</option>
+                                    <option label="Auckland - North" value="Auckland - North">&ndash;&nbsp;&nbsp;Auckland - North</option>
+                                    <option label="Auckland - East" value="Auckland - East">&ndash;&nbsp;&nbsp;Auckland - East</option>
+                                    <option label="Auckland - South" value="Auckland - South">&ndash;&nbsp;&nbsp;Auckland - South</option>
+                                    <option label="Auckland - West" value="Auckland - West">&ndash;&nbsp;&nbsp;Auckland - West</option>
+                                    <option label="Other - North Island, NZ" value="Other - North Island, NZ">&ndash;&nbsp;&nbsp;Other - North Island, NZ</option>
+                                    <option label="Other - South Island, NZ" value="Other - South Island, NZ">&ndash;&nbsp;&nbsp;Other - South Island, NZ</option>
+                                    <option label="Other - Outside NZ" value="Other - Outside NZ">&ndash;&nbsp;&nbsp;Other - Outside NZ</option>
+                                    <option label="Tertiary Student" value="Tertiary Student">Tertiary Student</option>
+                                    <option label="Working Full/Part-time" value="Working Full/Part-time">Working Full/Part-time</option>
+                                    <option label="Self employed" value="Self employed">Self employed</option>
+                                    <option label="Houseperson/retired" value="Houseperson/retired">Houseperson/retired</option>
+                                    <option label="Unemployed" value="Unemployed">Unemployed</option>
+                                    <option label="Beneficiary" value="Beneficiary">Beneficiary</option>
+                                    <option label="Other" value="Other">Other</option>
+                                </select>
+                            </div>
+                            <input class="formbtn" id="finalformsubmit" name="submit" type="submit" value="Send"  tabindex="5">
+                        </div>
+                    </div> 
+                </section>
+            </div>
+            
+            
+            <div id="lastpage" class="slideritem">
+               <section class="topwrapper clearfix">
+                    <h2>Great&nbsp;<span class="firstnameintext"></span>!</h2>
+                    <h3>You've made your picks, we'll send you an email with these and some more options we think you'll find useful...</h3>
+                    <div class="wraphelpspeachbubble photobubble clearfix">
+                        <div>
+                            <h3>Visit us online</h3>
+                            <span class="websitelinkicon"><a href="http://www.unitec.ac.nz" target="_blank"></a></span>
+                            <p>Check out <a href="http://www.unitec.ac.nz" target="_blank">www.unitec.ac.nz</a> for more study advice & support.</p>
+                        </div>
+                        <span class="speechbubbledot"></span>
+                    </div>
+                </section>
+
+                
+                <section class="takephotocontent2">
+                    <div class="takeaphotocontentwrapper">
+                        <img class="guysonlastpage doeronlaspage" src="images/characters/doer.png" alt="doer" />
+                        <img class="guysonlastpage creatoronlaspage" src="images/characters/creator.png" alt="creator" />
+                        <img class="guysonlastpage thinkeronlaspage" src="images/characters/thinker.png" alt="thinker" />
+                        <img class="guysonlastpage helperonlaspage" src="images/characters/helper.png" alt="helper" />
+                        <img class="guysonlastpage persuaderonlaspage" src="images/characters/persuader.png" alt="persuader" />
+                        <img class="guysonlastpage organizeronlaspage" src="images/characters/organizer.png" alt="organizer" />
+                        
+                    </div>
+                </section>
+            </div>
+         </div>
+         <!--end of slider-->
+        </div>
+        <!--end of sliderwrapper-->
+        
+        <div id="alert">
+        	<div class="panel">
+            	<span class="alertsign"></span>
+                <h3>Please choose atleast 1 character.</h3>
+                <div class="okbtn">OK</div>
+            </div>
+        </div>
+    
+    <!-- NEED HELP -->
+    
+    <div class="frame wrapbottomguys" id="needhelp">
+    	<img class="bg-image" src="images/main_bg.jpg" alt="bg image" />
+    	<section class="topwrapper clearfix">
+        	<h2>Need Help?</h2>
+            <h4><strong>YouFinder is an application</strong> to help you make decisions about your career path. It's based on a popular model for identifying personality types called RIASEC. </h4>
+            <p>YouFinder lets you explore different characters to help you find career options that suit your interests and skills. Don't worry if you&nbsp;can't find&nbsp;an exact match - you're probably going to be a mix of a few different personality types so make sure you check them all out. </p>
+        </section>
+        <section class="wrapthreebubbles clearfix">
+        	<div class="wraphelpspeachbubble clearfix">
+                <div>
+                	<h3>For more information</h3>
+                    <span id="emailicon"><a href="mailto:study@unitec.ac.nz?subject=I'd like More information - from the youfinder app"></a></span>
+                	<p>Send us an email with any more detailed questions you have.</p>
+                </div>
+                <span class="speechbubbledot"></span>
+            </div>
+            <div class="wraphelpspeachbubble clearfix" id="bubble2">
+                <div>
+                	<h3>Our website</h3>
+                    <span class="websitelinkicon"><a href="http://www.unitec.ac.nz" target="_blank"></a></span>
+                	<p>Our website features all of our course information and more, at <a href="http://www.unitec.ac.nz" target="_blank">www.unitec.ac.nz</a></p>
+                </div>
+                <span class="speechbubbledot"></span>
+            </div>
+            <div class="wraphelpspeachbubble clearfix" id="bubble3">
+                <div>
+                	<h3>Talk to our Careers team</h3>
+                    <span id="careerlinkicon"><a href="http://www.careers.unitec.ac.nz" target="_blank"></a></span>
+                	<p>If you're really stuck and not sure what career is for you make a time to chat with our Careers team, 
+at <a href="http://www.careers.unitec.ac.nz" target="_blank">www.careers.unitec.ac.nz</a></p>
+                </div>
+                <span class="speechbubbledot"></span>
+            </div>
+        </section>
+        <section class="needhelp_characters" id="help">
+            <img src="images/characters/doer.png" alt="doer" />
+            <img class="bringforward" src="images/characters/creator.png" alt="creator" />
+            <img src="images/characters/thinker.png" alt="thinker" />
+            <img src="images/characters/helper.png" alt="helper" />
+            <img src="images/characters/persuader.png" alt="persuader" />
+            <img src="images/characters/organizer.png" alt="organizer" />
+        </section>
+
+    </div>
+ </form>   
+   
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+		<script src="js/vendor/jquery-easing.js"></script>
+        <script src="js/vendor/jquery-ui-1.10.3.custom.js"></script>
+        <script src="js/vendor/jquery.ui.touch-punch.min.js"></script>
+		<script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!--<script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>-->
+    </body>
+</html>
